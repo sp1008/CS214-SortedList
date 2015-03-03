@@ -1,6 +1,8 @@
 CC = $gcc
 CCFLAGS = -g -Wall -m32
 
+all: sl
+
 sl: libsl.a main.o
   $(CC) -m32 -o $@ main.o -L. -lsl
 
